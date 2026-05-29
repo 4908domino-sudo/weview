@@ -1,8 +1,9 @@
 // Design Ref: §4.2 POST /api/sessions — 새 활동 세션 생성
-// Plan SC: 선생님 3분 내 활동 생성
+// 로그인 상태면 Supabase DB에 활동 기록 저장
 
 import { NextRequest, NextResponse } from 'next/server';
 import { createSession } from '@/lib/session';
+import { createClient } from '@/lib/supabase/server';
 import type { CreateSessionRequest } from '@/types/session';
 
 export async function POST(req: NextRequest) {
@@ -42,12 +43,28 @@ export async function POST(req: NextRequest) {
       groups,
     });
 
+    // 로그인 상태면 Supabase에 활동 기록
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (user) {
+      await supabase.from('activities').insert({
+        teacher_id: user.id,
+        title: title.trim(),
+        criteria,
+        settings: settings ?? { commentsEnabled: true, anonymous: true },
+        groups,
+        session_id: session.id,
+      });
+    }
+
     const baseUrl = req.nextUrl.origin;
     return NextResponse.json(
       {
         sessionId: session.id,
         joinUrl: `${baseUrl}/join/${session.id}`,
         expiresAt: session.expiresAt,
+        savedToAccount: !!user,  // 로그인 여부 응답에 포함
       },
       { status: 201 }
     );
