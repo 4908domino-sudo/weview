@@ -1,0 +1,145 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp.min.css');
+
+:root {
+  --color-common-100: #FFFFFF;
+  --color-common-0:   #000000;
+  --color-neutral-99: #F7F7F7;
+  --color-neutral-95: #DCDCDC;
+  --color-neutral-10: #171717;
+  --color-coolNeutral-99: #F7F7F8;
+  --color-coolNeutral-98: #F4F4F5;
+  --color-coolNeutral-97: #EAEBEC;
+  --color-coolNeutral-96: #E1E2E4;
+  --color-coolNeutral-95: #DBDCDF;
+  --color-coolNeutral-90: #C2C4C8;
+  --color-coolNeutral-80: #AEB0B6;
+  --color-coolNeutral-70: #989BA2;
+  --color-coolNeutral-60: #878A93;
+  --color-coolNeutral-50: #70737C;
+  --color-coolNeutral-40: #5A5C63;
+  --color-coolNeutral-30: #46474C;
+  --color-coolNeutral-25: #37383C;
+  --color-coolNeutral-23: #333438;
+  --color-coolNeutral-22: #2E2F33;
+  --color-coolNeutral-20: #292A2D;
+  --color-coolNeutral-17: #212225;
+  --color-coolNeutral-15: #1B1C1E;
+  --color-coolNeutral-10: #171719;
+  --color-coolNeutral-7:  #141415;
+  --color-coolNeutral-5:  #0F0F10;
+  --color-blue-99: #F7FBFF;
+  --color-blue-95: #EAF2FE;
+  --color-blue-90: #C9DEFE;
+  --color-blue-80: #9EC5FF;
+  --color-blue-70: #69A5FF;
+  --color-blue-65: #4F95FF;
+  --color-blue-60: #3385FF;
+  --color-blue-55: #1A75FF;
+  --color-blue-50: #0066FF;
+  --color-blue-45: #005EEB;
+  --color-blue-40: #0054D1;
+  --color-blue-30: #003E9C;
+  --color-blue-20: #002966;
+  --color-blue-10: #001536;
+  --color-red-95: #FEECEC;
+  --color-red-50: #FF4242;
+  --color-red-40: #E52222;
+  --color-green-99: #F2FFF6;
+  --color-green-95: #D9FFE6;
+  --color-green-90: #ACFCC7;
+  --color-green-50: #00BF40;
+  --color-green-40: #009632;
+  --color-green-30: #006E25;
+  --color-green-20: #004517;
+  --color-orange-99: #FFFCF7;
+  --color-orange-95: #FEF4E6;
+  --color-orange-90: #FEE6C6;
+  --color-orange-50: #FF9200;
+  --color-orange-40: #D47800;
+  --color-orange-30: #9C5800;
+  --color-redOrange-50: #FF5E00;
+  --color-redOrange-40: #CC4B00;
+  --color-cyan-99: #F7FEFF;
+  --color-cyan-95: #DEFAFF;
+  --color-cyan-90: #B5F4FF;
+  --color-cyan-50: #00BDDE;
+  --color-cyan-40: #0098B2;
+  --color-cyan-30: #006F82;
+  --color-violet-99: #FBFAFF;
+  --color-violet-95: #F0ECFE;
+  --color-violet-90: #DBD3FE;
+  --color-violet-80: #C0B0FF;
+  --color-violet-60: #7D5EF7;
+  --color-violet-50: #6541F2;
+  --color-violet-45: #5B37ED;
+  --color-violet-40: #4F29E5;
+  --color-violet-30: #3A16C9;
+  --color-pink-99: #FFFAFE;
+  --color-pink-95: #FEECFB;
+  --color-pink-90: #FED3F7;
+  --color-pink-60: #FA73E3;
+  --color-pink-50: #F553DA;
+  --color-pink-40: #D331B8;
+  --color-pink-30: #A81690;
+
+  --color-primary-normal:    var(--color-blue-50);
+  --color-primary-strong:    var(--color-blue-45);
+  --color-primary-heavy:     var(--color-blue-40);
+  --color-label-normal:       rgba(46, 47, 51, 0.88);
+  --color-label-strong:       #171719;
+  --color-label-neutral:      rgba(37, 38, 41, 0.61);
+  --color-label-alternative:  rgba(55, 56, 60, 0.61);
+  --color-label-assistive:    rgba(55, 56, 60, 0.28);
+  --color-label-disable:      rgba(55, 56, 60, 0.16);
+  --color-static-white: #FFFFFF;
+  --color-static-black: #000000;
+  --color-background-normal:    #FFFFFF;
+  --color-background-alternative:#F7F7F8;
+  --color-line-normal-normal:    rgba(112, 115, 124, 0.22);
+  --color-line-normal-neutral:   rgba(112, 115, 124, 0.16);
+  --color-line-normal-alternative:rgba(112, 115, 124, 0.08);
+  --color-line-solid-normal:     #EAEBEC;
+  --color-line-solid-neutral:    #F4F4F5;
+  --color-line-solid-alternative:#F7F7F8;
+  --color-status-positive: var(--color-green-50);
+  --color-status-cautionary: var(--color-orange-50);
+  --color-status-destructive: var(--color-red-50);
+  --color-interaction-inactive: var(--color-coolNeutral-70);
+  --color-interaction-disable:  var(--color-coolNeutral-98);
+  --color-component-fill-normal:      rgba(112, 115, 124, 0.08);
+  --color-component-fill-strong:      rgba(112, 115, 124, 0.16);
+  --color-material-dimmer: rgba(23, 23, 25, 0.52);
+
+  --font-sans: "Pretendard JP Variable", "Pretendard JP", "Pretendard",
+               -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+               system-ui, "Helvetica Neue", sans-serif;
+  --font-display: "Pretendard JP Variable", "Pretendard JP", "Pretendard",
+                  -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, "Menlo", "Cascadia Mono",
+               "JetBrains Mono", monospace;
+
+  --shadow-emphasize:   0 1px 4px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(112, 115, 124, 0.07);
+  --shadow-strong:      0 6px 12px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-heavy:       0 12px 36px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.07);
+  --shadow-popover:     0 4px 12px rgba(23, 23, 23, 0.10), 0 0 0 1px rgba(112, 115, 124, 0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-label-normal);
+  background: var(--color-coolNeutral-99);
+}
+
+button { font-family: var(--font-sans); }
+a { color: inherit; text-decoration: none; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(112,115,124,0.28); border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-track { background: transparent; }
